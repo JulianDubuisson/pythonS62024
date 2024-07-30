@@ -1,1 +1,8 @@
 .venv
+__pycache__
+.idx
+devserver.sh
+README.md
+requirements.txt
+
+
