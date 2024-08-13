@@ -5,25 +5,20 @@ int = 1 (Número entero, no tiene decimales)
 float = 1.5 (Número con decimal)
 boolean = True or False (Permite saber si es verdadero o falso) """
 
-"""-------------------------------------------------------------------"""
-
-"""¿Cómo declarar una variable?"""
-
-""" nombre = "Julian"
+nombre = "Julian"
 edad = 25
-peso = 83.7
-es_profesor = True
-es_estudiante = False """
+peso = 75.4
+mayorEdad = True
+menorEdad = False
 
 """-------------------------------------------------------------------"""
 
 """¿Cómo imprimir una variable?"""
 
-"""-------------------------------------------------------------------"""
-
-"""¿Cómo declarar una variable?"""
-
-
+print(nombre)
+print(edad)
+print(peso)
+print("Tu peso es", peso)
 """-------------------------------------------------------------------"""
 
 """¿Cómo imprimir una constante?"""
@@ -45,3 +40,5 @@ b = 2 """
 """-------------------------------------------------------------------"""
 
 "Inputs"
+
+
