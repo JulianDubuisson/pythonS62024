@@ -20,7 +20,7 @@ if edad >= 18:
 else:
     print("Sos menor de edad, no podes pasar") """
 
-
+""" 
 nota = 7
 
 if nota <= 1:
@@ -38,4 +38,5 @@ numero = 10
 if numero >= 8:
     print("Pasaste de ronda")
 else:
-    print("Perdiste")
+    print("Perdiste") """
+
