@@ -72,11 +72,15 @@ class ChatBot:
             "senior_electivas": "Ciencias, humanidades, artes y tecnología",
             "senior_actividades": "Proyectos de investigación, pasantías y orientación vocacional",
             "admisiones": "Para iniciar el proceso de admisión, ingresa a https://bds.edu.ar/admisiones/ \nO enviá un mail a rrpp@bdsnet.com.ar",
-            "contacto": "Email: info@dayschool.edu\nTeléfono: 555-0123",
+            "contacto": "\nEmail:info@dayschool.edu\n\nTeléfono: 11-5901-6250 (usar el prefijo 11)\n\nInterno Kinder: 266\n\nInterno Primary: 237\n\nInterno Middle & Senior: 243",
             "horario_atencion": "Lunes a Viernes de 8:00 AM a 5:00 PM",
         }
         
+
+        #ESTABLECER CON QUE LINEA COMIENZA EL CHATBOT
         self.estado_actual = "inicio"
+
+        #MOSTRAR EL MENÚ CON LAS OPCIONES
 
     def mostrar_menu(self):
         try:
@@ -102,6 +106,7 @@ class ChatBot:
             print(f"\nError inesperado: {e}")
             print("Por favor, contacta al administrador del sistema.")
 
+
     def procesar_entrada(self, opcion):
         """Procesa la entrada del usuario y actualiza el estado"""
         try:
@@ -116,6 +121,7 @@ class ChatBot:
                 return
 
             opcion = int(opcion)
+
             
             # Procesar según el estado actual
             if self.estado_actual == "inicio":
@@ -174,14 +180,14 @@ class ChatBot:
             print("Por favor, intenta nuevamente.")
 
     def ejecutar(self):
-        print("\n¡Bienvenido al ChatBot del Day School! 🎓")
+        print("\nHola soy Botgrano, ¿En qué puedo ayudarte? 🎓")
         
         while True:
             self.mostrar_menu()
             opcion = input("\n➤ Ingresa el número de la opción deseada: ").strip()
             
             if opcion.lower() == 'q':
-                print("\n¡Gracias por usar nuestro ChatBot! ¡Hasta pronto! 👋")
+                print("\n¡Gracias por contactarse con Botgrano! ¡Hasta pronto! 👋")
                 break
                 
             self.procesar_entrada(opcion)
